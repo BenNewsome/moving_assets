@@ -27,7 +27,20 @@
 <script id="cesium_sandcastle_script">
 function startup(Cesium) {
     'use strict';
+
+// Set the default camera position
+var west_bound = -2;
+var east_bound = 0;
+var north_bound = 52;
+var south_bound = 50;
+var rectangle_bounds = Cesium.Rectangle.fromDegrees(west_bound, south_bound, east_bound, north_bound);
+Cesium.Camera.DEFAULT_VIEW_FACTOR = 0;
+Cesium.Camera.DEFAULT_VIEW_RECTANGLE = rectangle_bounds;
+
+
 //Sandcastle_Begin
+//var viewer = new Cesium.Viewer('cesiumContainer', {
+//});
 
 var terrainProvider = new Cesium.CesiumTerrainProvider({
 url : 'https://assets.agi.com/stk-terrain/v1/tilesets/world/tiles',
@@ -35,6 +48,7 @@ requestVertexNormals : true
 });
 
 var viewer = new Cesium.Viewer('cesiumContainer', {
+vrButton : true,
 terrainProvider : terrainProvider,
 baseLayerPicker : false
 });
@@ -42,6 +56,7 @@ baseLayerPicker : false
 viewer.dataSources.add(Cesium.CzmlDataSource.load("movement.json")).then(function(ds) {
 viewer.trackedEntity = ds.entities.getById('path');
 });
+
 
   //Sandcastle_End
     Sandcastle.finishedLoading();
