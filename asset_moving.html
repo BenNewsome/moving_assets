@@ -53,6 +53,10 @@ terrainProvider : terrainProvider,
 baseLayerPicker : false
 });
 
+// Add the node arc map
+viewer.dataSources.add(Cesium.GeoJsonDataSource.load('map.json'));
+
+// Add the moving assets
 viewer.dataSources.add(Cesium.CzmlDataSource.load("movement.json")).then(function(ds) {
 viewer.trackedEntity = ds.entities.getById('path');
 });

@@ -1,0 +1,75 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.088, 50.8198]
+            },
+            "properties": {
+                "name": "Point 1"
+            }
+        }, 
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.7152, 51.1241]
+            },
+            "properties": {
+                "name": "Point 2"
+            }
+        }, 
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.1278, 51.5074]
+            },
+            "properties": {
+                "name": "Point 3"
+            }
+        }, 
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.0821, 50.6902]
+            },
+            "properties": {
+                "name": "Isle of white east"
+            }
+        }, 
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.3101, 50.7597]
+            },
+            "properties": {
+                "name": "Isle of white North"
+            }
+        }, 
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.5383, 50.6693]
+            },
+            "properties": {
+                "name": "Isle of white west"
+            }
+        }, 
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.2964, 50.57]
+            },
+            "properties": {
+                "name": "Isle of white south"
+            }
+        }
+    ]
+}
