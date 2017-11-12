@@ -18,23 +18,6 @@
             "text": "Spaceship 1"
     },
     "availability": "2017-11-11T18:00:00Z/2017-11-11T19:00:00Z",
-    "path": {
-        "material": {
-           "polylineOutline": {
-               "color": {
-                   "rgba" : [255, 0, 255, 255]
-               },
-               "outlineColor" : {
-                   "rgba": [0, 255, 255, 255]
-               },
-               "outlineWidth": 2
-           }
-       },
-       "width": 5,
-       "leadTime": 0,
-       "trialTime": 100,
-       "resolution": 5
-    },
     "model": {
         "gltf": "spaceship/scene.gltf",
         "scale": 5.0,
