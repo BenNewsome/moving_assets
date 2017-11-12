@@ -77,7 +77,7 @@
        "resolution": 5
     },
     "model": {
-        "gltf": "dragon/scene.gltf",
+        "gltf": "spaceship/scene.gltf",
         "scale": 5.0,
         "minimumPixelSize": 64,
         "speedup": "0.066"
