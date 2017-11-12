@@ -25,6 +25,10 @@
 <div id="toolbar"></div>
 
 <script id="cesium_sandcastle_script">
+
+var nodes;
+var arcs;
+
 function startup(Cesium) {
     'use strict';
 
@@ -54,20 +58,37 @@ baseLayerPicker : false
 });
 
 // Add the nodes
-viewer.dataSources.add(Cesium.GeoJsonDataSource.load('map.json'));
+var nodesDataSource = new Cesium.GeoJsonDataSource();
+viewer.dataSources.add(nodesDataSource);
+nodesDataSource.load('map.json').then(function(){
+    nodes = nodesDataSource.entities;
+});
+//nodes = nodesDatasource.entities;
 
 // Add the arcs
-viewer.dataSources.add(Cesium.GeoJsonDataSource.load("arcs.json"));
+var arcs = viewer.dataSources.add(Cesium.GeoJsonDataSource.load("arcs.json"));
 
 // Add the moving assets
 viewer.dataSources.add(Cesium.CzmlDataSource.load("movement.json")).then(function(ds) {
 viewer.trackedEntity = ds.entities.getById('path');
 });
 
+// Toggle the nodes
+//Sandcastle.addToolbarButton("Toggle nodes", function(){
+//    nodes.show = !nodes.show;
+//});
+
+// Toggle the arcs
+Sandcastle.addToolbarButton("Toggle nodes", function(){
+    nodes.show = !nodes.show;
+});
 
   //Sandcastle_End
     Sandcastle.finishedLoading();
 }
+
+
+
 if (typeof Cesium !== "undefined") {
     startup(Cesium);
 } else if (typeof require === "function") {
