@@ -1,7 +1,10 @@
 # moving_assets
 Some things moving around a network on Cesium.js over time
 
-Download cesium and install the node stuff it wants
+Download cesium and install the node stuff it wants:
+https://cesiumjs.org/downloads/
+
+
 
 Navigate to the Apps directory in Cesium.
 
