@@ -13,6 +13,10 @@
     "id": "spaceshit",
     "name": "Test flight of new Navy ship in Portsmouth",
     "description": "Ziggurat Spaceship(https://sketchfab.com/models/7fa46f3db31b4b9cbd165d60152a57d5) by Pedram Ashoori(https://sketchfab.com/pedramashoori) is licensed under CC Attribution(http://creativecommons.org/licenses/by/4.0/)",
+    "label": {
+            "show": "true",
+            "text": "Spaceship 1"
+    },
     "availability": "2017-11-11T18:00:00Z/2017-11-11T19:00:00Z",
     "path": {
         "material": {
@@ -57,7 +61,11 @@
 {
     "id": "dragon",
     "name": "The dragon of the isle of white",
-    "description": "Ryuk(https://sketchfab.com/models/8661ed20a5554a47949d552501355af2) by antoinepavia(https://sketchfab.com/antoinepavia) is licensed under CC Attribution(http://creativecommons.org/licenses/by/4.0/)",
+    "description": "Max speed = 10000 mph\n Favorate color = blue \n Credits: \nRyuk(https://sketchfab.com/models/8661ed20a5554a47949d552501355af2) by antoinepavia(https://sketchfab.com/antoinepavia) is licensed under CC Attribution(http://creativecommons.org/licenses/by/4.0/)",
+    "label": {
+            "show": "true",
+            "text": "Spaceship 2"
+    },
     "availability": "2017-11-11T18:00:00Z/2017-11-11T19:00:00Z",
     "path": {
         "material": {

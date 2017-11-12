@@ -28,6 +28,7 @@
 
 var nodes;
 var arcs;
+var assets;
 
 function startup(Cesium) {
     'use strict';
@@ -62,25 +63,38 @@ var nodesDataSource = new Cesium.GeoJsonDataSource();
 viewer.dataSources.add(nodesDataSource);
 nodesDataSource.load('map.json').then(function(){
     nodes = nodesDataSource.entities;
+//    node_labels = nodesDataSource.entities.getById('name');
 });
-//nodes = nodesDatasource.entities;
 
 // Add the arcs
-var arcs = viewer.dataSources.add(Cesium.GeoJsonDataSource.load("arcs.json"));
+var arcsDataSource = new Cesium.GeoJsonDataSource();
+viewer.dataSources.add(arcsDataSource);
+arcsDataSource.load('arcs.json').then(function(){
+    arcs = arcsDataSource.entities;
+});
+
+var labelOffset = new Cesium.Cartesian2(200, 20);
 
 // Add the moving assets
 viewer.dataSources.add(Cesium.CzmlDataSource.load("movement.json")).then(function(ds) {
-viewer.trackedEntity = ds.entities.getById('path');
+    assets = ds.entities;
+    viewer.trackedEntity = ds.entities.getById('path');
+    assets.values.forEach(function(asset) {
+        console.log(asset)
+        asset.label.pixelOffset = labelOffset;
+    });
 });
 
-// Toggle the nodes
-//Sandcastle.addToolbarButton("Toggle nodes", function(){
-//    nodes.show = !nodes.show;
-//});
 
-// Toggle the arcs
+
+// Toggle the nodes
 Sandcastle.addToolbarButton("Toggle nodes", function(){
     nodes.show = !nodes.show;
+});
+
+// Toggle the arcs
+Sandcastle.addToolbarButton("Toggle arcs", function(){
+    arcs.show = !arcs.show;
 });
 
   //Sandcastle_End

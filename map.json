@@ -48,7 +48,8 @@
                 "coordinates": [-1.3101, 50.7597]
             },
             "properties": {
-                "name": "Isle of white North"
+                "name": "Isle of white North",
+                "label": "A test label"
             }
         }, 
         {
