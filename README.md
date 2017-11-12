@@ -22,4 +22,9 @@ If you have a Iphone, then you deserve to suffer from your bad choices, unless y
 #TODO
 Obviously this readme needs simplifying and massivly improving, and likely spell checking.
 
+Thanks to Cesium, and the model asset creators of the dragon and spaceship, which have some licency shizle in the relevant folders...
+Sadly the spaceship seems too complex for a mobile browser, so just using a spaceship for now
+
+
+
 
