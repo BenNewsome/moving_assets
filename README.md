@@ -19,7 +19,7 @@ then go back to ......../Cesium and run
 Navigate to http://localhost:8080/Apps/asset_movements/asset_moving.html
 
 Note:
-This might be all completable on android using TMUX for a self contained VR experience.
+This might be all completable on android using Termux for a self contained VR experience.
 If you have a Iphone, then you deserve to suffer from your bad choices, unless you can launch web servers from that too?
 
 #TODO
